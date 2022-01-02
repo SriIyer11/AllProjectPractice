@@ -24,6 +24,11 @@ public BaseClass()
 	initializeProperties();
 }
 
+public void testDemo()
+{
+ System.out.println("New method added");
+}
+
 public BaseClass(WebDriver driver1)
 {
 	driver=driver1;
