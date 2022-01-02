@@ -23,6 +23,8 @@ public BaseClass()
 	prop=null;
 	initializeProperties();
 }
+//base class conflict
+
 
 public void testDemo()
 {
