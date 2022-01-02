@@ -23,6 +23,7 @@ public BaseClass()
 	prop=null;
 	initializeProperties();
 }
+//base class conflict
 
 public BaseClass(WebDriver driver1)
 {
