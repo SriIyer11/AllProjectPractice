@@ -1,0 +1,21 @@
+js.executeAsyncScript("window.setTimeout(arguments[arguments.length - 1], 5000);");
+js.executeScript("arguments[0].click();", button);
+(Where button is a WebElement)
+js.executeScript("alert('Welcome to Guru99');")
+String url = js.executeScript("return document.URL;").toString();	
+js.executeScript("window.scrollBy(0,600)");
+js.executeScript("document.getElementById('some id').value='someValue';");
+js.executeScript("document.getElementById('Email').value='abcss';");
+js.executeScript("document.getElementById('enter your element id').click();");
+//or
+js.executeScript("arguments[0].click();", loginButton);
+js.executeScript("document.getElementById('enter element id').checked=false;");	
+js.executeScript("history.go(0)");
+String sText =  js.executeScript("return document.documentElement.innerText;").toString();
+System.out.println(sText);
+String sText =  js.executeScript("return document.title;").toString();
+System.out.println(sText);
+js.executeScript("$('ul.menus.menu-secondary.sf-js-enabled.sub-menu li').hover()");Java
+js.executeScript("window.location = 'https://www.google.com");
+js.executeScript("window.location = 'https://www.google.com");	
+js.executeScript("arguments[0].click();", element);(to click on hidden element)

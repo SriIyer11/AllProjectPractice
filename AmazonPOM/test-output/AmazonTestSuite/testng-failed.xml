@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [AmazonTestSuite]">
+  <test name="AmazonSanityTestCase(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.HomePageTestNG">
+        <methods>
+          <include name="tearDownTestCase"/>
+          <include name="testAmazon"/>
+          <include name="b4Class"/>
+        </methods>
+      </class> <!-- testcases.HomePageTestNG -->
+    </classes>
+  </test> <!-- AmazonSanityTestCase(failed) -->
+</suite> <!-- Failed suite [AmazonTestSuite] -->

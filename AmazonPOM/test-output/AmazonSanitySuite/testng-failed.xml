@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [AmazonSanitySuite]">
+  <listeners>
+    <listener class-name="main.ListenersCl"/>
+  </listeners>
+  <test name="AmazonSanityTestCase(failed)">
+    <groups>
+      <run>
+        <include name="sanityMethod1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.HomePageTestNG">
+        <methods>
+          <include name="testSanity"/>
+          <include name="b4Test"/>
+          <include name="b4Method"/>
+        </methods>
+      </class> <!-- testcases.HomePageTestNG -->
+    </classes>
+  </test> <!-- AmazonSanityTestCase(failed) -->
+</suite> <!-- Failed suite [AmazonSanitySuite] -->

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AmazonRegressionSuite" parallel="tests" thread-count="2" >
+   <parameter name="username" value="Srini"/>
+   <parameter name="searchtext" value="Headsets"/>
+   <parameter name="emailAdress" value="sriniiyer86@gmail.com"/>
+       <!--    <groups>
+           <run>
+            <include name="regression"/>           
+           </run>       
+         </groups>  -->
+   <test name="DataProviderTests">
+         <groups>
+           <run>
+            <include name="dataProviderSearch"/>           
+           </run>       
+         </groups> 
+     <classes>
+       <class name="testcases.HomePageTestNG"/>
+     </classes>
+   
+   </test>      
+         
+         
+  <test name="AmazonSearchSanityTestCases">
+   <parameter name="username" value="Rahul"/>
+   <parameter name="searchtext" value="Laptop"/>
+   <parameter name="emailAddress" value="rahul88@gmail.com"/>
+   <parameter name="Dropdowntype" value="Electronics"/>
+       <groups>
+           <run>
+            <include name="searchSanity"/>           
+           </run>       
+         </groups>  
+    <classes>
+      <class name="testcases.HomePageTestNG"> 
+    
+ 
+      </class>
+    </classes>
+  </test>   <!-- AmazonSearchSanityTestCase -->
+  <!-- <test name="AmazonSanityTestCase">
+         <groups>
+           <run>
+            <include name="sanity"/>           
+           </run>       
+         </groups>  
+   <classes>
+      <class name="testcases.HomePageTestNG"/>  
+   </classes>   
+  </test> -->
+</suite> <!-- AmazonTestSuite -->

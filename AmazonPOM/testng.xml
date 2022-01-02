@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AmazonSanitySuite">
+   <groups>
+           <run>
+            <include name="sanity"/>           
+           </run>       
+         </groups>  
+  <test thread-count="5" name="AmazonSanityTestCase">
+       <groups>
+           <run>
+            <include name="searchSanity"/>           
+           </run>       
+         </groups> 
+  
+    <classes>
+      <class name="testcases.HomePageTestNG">          
+        <methods> 
+          <include name="searchAmazon"/>            
+        </methods>     
+      </class>
+    </classes> 
+  </test> <!-- AmazonSanityTestCase -->
+</suite> <!-- AmazonTestSuite -->

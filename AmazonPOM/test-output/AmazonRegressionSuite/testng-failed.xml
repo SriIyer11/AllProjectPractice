@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [AmazonRegressionSuite]">
+  <parameter name="searchtext" value="Headsets"/>
+  <parameter name="emailAdress" value="sriniiyer86@gmail.com"/>
+  <parameter name="username" value="Srini"/>
+  <test name="DataProviderTests(failed)">
+    <groups>
+      <run>
+        <include name="dataProviderSearch"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.HomePageTestNG">
+        <methods>
+          <include name="searchAmazon_useDataProvider" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- testcases.HomePageTestNG -->
+    </classes>
+  </test> <!-- DataProviderTests(failed) -->
+</suite> <!-- Failed suite [AmazonRegressionSuite] -->
