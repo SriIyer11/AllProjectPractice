@@ -16,6 +16,7 @@ public class BaseClass {
 public static WebDriver driver;
 public static Properties prop;
 
+//BaseClass of framework
 public BaseClass()
 {
 	driver=null;
