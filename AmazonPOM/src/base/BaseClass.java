@@ -27,6 +27,7 @@ public BaseClass()
 public void testDemo()
 {
  System.out.println("New method added");
+ System.out.println("Extra code worked upon");
 }
 
 public BaseClass(WebDriver driver1)
