@@ -25,10 +25,7 @@ public BaseClass()
 }
 //base class conflict
 
-public void testDemo()
-{
- System.out.println("New method added");
-}
+
 
 public BaseClass(WebDriver driver1)
 {
